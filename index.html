@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+  <div id="hide" class="hide"></div>
+  <div class="l-head-block-container">
+    <picture class="l-head-block-bg">
+      <source media="(min-width : 750px)" srcset="img/desktop/image-hero.jpg">
+      <source srcset="img/mobile/image-hero.jpg">
+      <img src="img/desktop/image-hero.jpg" alt="Hero">
+    </picture>
+    <section class="l-head-block">
+      <header class="l-site-header">
+        <p class="logo"><img src="img/logo.svg" alt="loopstudios"></p>
+        <nav id="siteNav" class="l-site-nav font1">
+          <ul>
+            <li class="nav-button" style="--i : 2"><a class="pointer" href="#">About</a></li>
+            <li class="nav-button" style="--i : 3"><a class="pointer" href="#">Careers</a></li>
+            <li class="nav-button" style="--i : 4"><a class="pointer" href="#">Events</a></li>
+            <li class="nav-button" style="--i : 5"><a class="pointer" href="#">Products</a></li>
+            <li class="nav-button" style="--i : 6"><a class="pointer" href="#">Support</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger" class="hamburger pointer">
+          <svg viewbox="0 0 24 16">
+              <path d="M0 0h24v2H0z"/>
+              <path d="M0 7h24v2H0z"/>
+              <path d="M0 14h24v2H0z"/>
+          </svg>
+        </div>
+      </header>
+      <div class="slogan-container">
+        <div class="slogan">
+          <h2 class="font2">
+            Immersive<br>
+            experi<span class="break">ences</span><br>
+            that deliver
+          </h2>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="l-content-block">
+    <article class="l-vr-article-container">
+      <figure>
+        <picture>
+          <source media="(min-width : 750px)" srcset="img/desktop/image-interactive.jpg">
+          <source srcset="img/mobile/image-interactive.jpg">
+          <img src="img/desktop/image-interactive.jpg" alt="Virtual Reality">
+        </picture>
+      </figure>
+      <figcaption>
+        <h3 class="font2">The leader in inter<span class="break">active VR</span></h3>
+        <p class="font1">
+          Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          creations have transformed businesses through digital experiences that bind 
+          to their brand.
+        </p>
+      </figcaption>
+    </article>
+    <article class="l-creations-grid-container">
+      <header class="l-creations-grid-header"><h3 class="font2">Our creations</h3></header>
+      <button class="classic-button pointer"><p class="font1">See all</p></button>
+      <div class="l-creations-grid">
+        <div class="l-creations-grid-r1">
+          <div class="grid-item font2" >
+            <a href="#" class="pointer">
+              <picture data-content="DEEP&#10;EARTH">
+                <source media="(min-width : 1000px)" srcset="img/desktop/image-deep-earth.jpg">
+                <source srcset="img/mobile/image-deep-earth.jpg">
+                <img src="img/desktop/image-deep-earth.jpg" alt="Deep Earth">
+              </picture>
+            </a>
+          </div>
+          <div class="grid-item font2">
+            <a href="#" class="pointer">
+              <picture data-content="NIGHT&#10;ARCADE">
+                <source media="(min-width : 1000px)" srcset="img/desktop/image-night-arcade.jpg">
+                <source srcset="img/mobile/image-night-arcade.jpg">
+                <img src="img/desktop/image-night-arcade.jpg" alt="Night Arcade">
+              </picture>
+            </a>
+          </div>
+          <div class="grid-item font2">
+            <a href="#" class="pointer">
+              <picture data-content="SOCCER&#10;TEAM VR">
+                <source media="(min-width : 1000px)" srcset="img/desktop/image-soccer-team.jpg">
+                <source srcset="img/mobile/image-soccer-team.jpg">
+                <img src="img/desktop/image-soccer-team.jpg" alt="Soccer Team">
+              </picture>
+            </a>
+          </div>
+          <div class="grid-item font2">
+            <a href="#" class="pointer">
+              <picture data-content="THE&#10;GRID">
+                <source media="(min-width : 1000px)" srcset="img/desktop/image-grid.jpg">
+                <source srcset="img/mobile/image-grid.jpg">
+                <img src="img/desktop/image-grid.jpg" alt="The Grid">
+              </picture>
+            </a>
+          </div>
+        </div>
+        <div class="l-creations-grid-r2">
+          <div class="grid-item font2">
+            <a href="#" class="pointer">
+              <picture data-content="FROM UP&#10;ABOVE VR">
+                <source media="(min-width : 1000px)" srcset="img/desktop/image-from-above.jpg">
+                <source srcset="img/mobile/image-from-above.jpg">
+                <img src="img/desktop/image-from-above.jpg" alt="From Above">
+              </picture>
+            </a>
+          </div>
+          <div class="grid-item font2">
+            <a href="#" class="pointer">
+              <picture data-content="POCKET&#10;BOREALIS">
+                <source media="(min-width : 1000px)" srcset="img/desktop/image-pocket-borealis.jpg">
+                <source srcset="img/mobile/image-pocket-borealis.jpg">
+                <img src="img/desktop/image-pocket-borealis.jpg" alt="Pocket Borealis">
+              </picture>
+            </a>
+          </div>
+          <div class="grid-item font2">
+            <a href="#" class="pointer">
+              <picture data-content="THE&#10;CURIOSITY">
+                <source media="(min-width : 1000px)" srcset="img/desktop/image-curiosity.jpg">
+                <source srcset="img/mobile/image-curiosity.jpg">
+                <img src="img/desktop/image-curiosity.jpg" alt="The Curiosity">
+              </picture>
+            </a>
+          </div>
+          <div class="grid-item font2">
+            <a href="#" class="pointer">
+              <picture data-content="MAKE IT&#10;FISHEYE">
+                <source media="(min-width : 1000px)" srcset="img/desktop/image-fisheye.jpg">
+                <source srcset="img/mobile/image-fisheye.jpg">
+                <img src="img/desktop/image-fisheye.jpg" alt="Fisheye">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <footer>
+    <div class="l-left-footer">
+      <p class="logo"><img src="img/logo.svg" alt="loopstudios"></p>
+      <nav class="l-site-nav-footer font1">
+        <ul>
+          <li class="nav-button" style="--i : 2"><a class="pointer" href="#">About</a></li>
+          <li class="nav-button" style="--i : 3"><a class="pointer" href="#">Careers</a></li>
+          <li class="nav-button" style="--i : 4"><a class="pointer" href="#">Events</a></li>
+          <li class="nav-button" style="--i : 5"><a class="pointer" href="#">Products</a></li>
+          <li class="nav-button" style="--i : 6"><a class="pointer" href="#">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="l-right-footer">
+      <ul class="social-logos-container">
+        <li class="nav-button"><a class="pointer" href="#"><img src="img/icon-facebook.svg" alt="Facebook"></a></li>
+        <li class="nav-button"><a class="pointer" href="#"><img src="img/icon-twitter.svg" alt="Twitter"></a></li>
+        <li class="nav-button"><a class="pointer" href="#"><img src="img/icon-pinterest.svg" alt="Pinterest"></a></li>
+        <li class="nav-button"><a class="pointer" href="#"><img src="img/icon-instagram.svg" alt="Instagram"></a></li>
+      </ul>
+      <p class="font1">© 2021 Loopstudios. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+<script src="index.js"></script>
+</html>
