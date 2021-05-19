@@ -1,0 +1,189 @@
+@use '../base/typography' as *;
+
+@mixin mediaQuery {
+    
+    @media only screen and (max-width : 1300px){
+
+        .l-vr-article-container{
+    
+            figcaption{
+                width: 40vw;
+                left: 25rem;
+                right: unset;
+            }
+    
+        }
+    }
+    
+    @media only screen and (max-width : 1000px){
+    
+        .hamburger{
+            display: block;
+        }
+    
+        .classic-button{
+            order: 99;
+            margin: 0 auto;
+            margin-top: 2.5rem;
+        }
+    
+        .l-site-nav{
+            font-family: $font2;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            position: fixed;
+            top : 50%;
+            left : 0;
+            transform: translateY(-50%);
+            pointer-events: none;
+    
+            ul{
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-left : 8rem;
+            }
+    
+            li{
+                pointer-events: none;
+                margin: 0.5em 0;
+                opacity: 0;
+                transform: scaleY(0) translateX(6rem) translateY(-2rem);
+                transition-property: opacity, transform;
+                transition-duration: .15s;
+                transition-timing-function: ease;
+            }
+        }
+    
+        .grid-item{
+    
+            margin: 2vw !important;
+            font-size: 5vw;
+
+            picture{
+    
+                &:after{
+                    bottom:15%;
+                    left: 7.5%;
+                }
+        
+                &:before{
+                    background-image : linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, transparent 75%);
+                }
+            }
+        }
+    
+        .l-right-footer, .l-left-footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        
+        }
+    
+        .l-creations-grid-r1, .l-creations-grid-r2{
+            flex-direction: column;
+        }
+    
+        footer{
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .social-logos-container li{
+            margin : 0.65rem;
+        }
+    }
+    
+    @media only screen and (max-width : 750px){
+    
+        section{
+            padding : 0 2rem;
+        }
+    
+        .hamburger svg{
+            width: 2.2rem;
+        }
+    
+        .logo img, footer .logo img{
+            width: 15rem;
+        }
+
+        .slogan h2{
+            font-size: 2.8rem;
+        }
+    
+        .classic-button{
+            font-size: 1.05rem;
+        }
+    
+        .l-site-nav{
+            font-size: 1.9rem;
+    
+            ul{
+                margin-left: 2rem;
+            }
+        }
+    
+        .l-site-nav-footer{
+            font-size: 0.9rem;
+
+            ul{
+                flex-direction: column;
+    
+            }
+    
+            li{
+                margin: 0.65rem 0;
+            }
+        }
+    
+        .l-vr-article-container figcaption h3{
+    
+            text-align: center;
+            
+        }
+    
+        .l-head-block-bg img{
+            min-width: 750px;
+        }
+    
+        .l-creations-grid-header{
+            margin-bottom: 2.5rem;
+            width: 100%;
+    
+            h3{
+                width: inherit;
+                text-align: center;
+            }
+    
+        }
+    
+        footer{
+            padding : 2rem 3rem;
+            margin : 0;
+            margin-top: 9rem;
+        }
+
+        .l-site-nav-footer{
+            margin-left: 0;
+        }
+    }
+    
+    @media only screen and (max-width : 65rem){
+    
+        .l-vr-article-container{
+    
+            figcaption{
+                position: static;
+                padding-left: 0;
+                width: 100%;
+                max-width: unset;
+            }
+            
+            picture{
+                max-width: unset;
+            }
+        }
+    }
+}

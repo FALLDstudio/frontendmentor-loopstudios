@@ -1,0 +1,28 @@
+.l-head-block-container{
+    position: relative;
+}
+
+.l-head-block{
+    position: absolute;
+    top: 0;
+    left : 0;
+    width: 100%;
+    height: 100%;
+}
+
+.l-head-block-bg{
+
+    filter: brightness(0.6);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        min-width: 1440px;
+    }
+}
+
+.l-head-block-container, .l-content-block article{
+    margin-bottom: 11rem;
+}

@@ -1,0 +1,32 @@
+header{
+
+    >*{
+        display: inline-block;
+    }
+
+    width: 100%;
+}
+
+.l-site-header{
+
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    >*{
+        z-index: 2;
+    }
+}
+
+.l-creations-grid-header{
+
+    width: auto;
+    margin-bottom: 5rem;
+
+    h3{
+        display: inline-block;
+    }
+}
+

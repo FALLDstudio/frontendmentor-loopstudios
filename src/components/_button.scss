@@ -1,0 +1,30 @@
+@use '../abstracts/color' as *;
+
+.nav-button{
+    position: relative;
+
+    &:after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: -0.3em;
+        left : 0;
+        height: 0.04em;
+        background-color: $white;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform .25s ease;
+    }
+}
+
+.classic-button{
+
+    border : solid $grey 0.05em;
+    width: 11em;
+    height: 3.3em;
+    border-radius: 0.2em;
+    transition-property: color, background-color, border-color;
+    transition-duration: .2s;
+
+}

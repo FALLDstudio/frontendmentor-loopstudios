@@ -1,0 +1,64 @@
+@use '../abstracts/color' as *;
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+$font1 : 'Alata';
+$font2 : 'Josefin Sans';
+
+.font1{
+    font-family: $font1;
+}
+
+.font2{
+    font-family: $font2;
+    text-transform: uppercase;
+}
+
+.l-site-nav,.l-site-nav-footer{
+    color : $white;
+    font-size: 0.9rem;
+}
+
+.l-site-nav-footer{
+    font-size: 0.8rem;
+}
+
+footer .logo img{
+    width: 162px;
+}
+
+.l-vr-article-container{
+
+    h3{
+        font-size: 2.8rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+        color: $darkGrey;
+        text-align: justify;
+    }
+}
+
+.l-creations-grid-header{
+
+    h3{
+        font-size: 2.8rem;
+    }
+}
+
+.classic-button{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+}
+
+.grid-item{
+    color : $white;
+    font-size: 2.3vw;
+}
+
+.l-right-footer p{
+    color : $grey;
+    font-size: 0.8rem;
+}

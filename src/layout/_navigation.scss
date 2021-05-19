@@ -1,0 +1,20 @@
+.l-site-nav,.l-site-nav-footer{
+    
+    height: 100%;
+
+    ul{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    li{
+        margin : 0 1.3rem;
+    }
+}
+
+.l-site-nav-footer{
+
+    height: unset;
+    margin-left: -1.3rem;
+}

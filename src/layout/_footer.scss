@@ -1,0 +1,39 @@
+@use '../abstracts/color' as *;
+
+footer{
+    background-color: $black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 10rem;
+    margin : -1.5rem;
+    margin-top: 11rem;
+
+    >*{
+        margin : 1.5rem;
+    }
+
+    .logo{
+        margin-bottom: 2rem;
+    }
+}
+
+.social-logos-container{
+
+    margin-bottom: 2rem;
+    >*{
+        display: inline-block;
+        margin-left: 1.3rem;
+    }
+
+    img{
+        transition: filter .2s;
+        width: 1.4rem;
+    }
+}
+
+.l-right-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}

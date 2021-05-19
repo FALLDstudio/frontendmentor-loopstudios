@@ -1,0 +1,96 @@
+@use '../abstracts/color' as *;
+
+body.is-fixe{
+    position: fixed;
+}
+
+.l-site-nav.is-visible{
+
+    li{
+        pointer-events: visible;
+        opacity: 1;
+        transform: none;
+        transition-property: opacity, transform;
+        transition-duration: .8s;
+        transition-delay: calc(var(--i) * .02s);
+        transition-timing-function: cubic-bezier(.19,1,.22,1);
+    }
+}
+
+.l-site-nav.no-transition{
+
+    li{
+        transition: none;
+    }
+}
+
+.hide.is-visible{
+    pointer-events: visible;
+    transform: none;
+    border-bottom-left-radius: 0;
+    transition: transform .4s;
+}
+
+.pointer{
+    cursor :pointer;
+}
+
+.hamburger.to-line{
+
+    path:nth-of-type(1){
+        transform: translateY(45%);
+    }
+
+    path:nth-of-type(3){
+        transform: translateY(-45%);
+    }
+
+    &.to-cross{
+
+        path:nth-of-type(1){
+            transform: translateY(45%) translateX(-17%) rotate(45deg);
+        }
+    
+        path:nth-of-type(3){
+            transform: translateY(-45%) translateX(-17%) rotate(-45deg);
+        }
+    }
+}
+
+.nav-button:hover, .nav-button:active{
+    &:after{
+        transform : scaleX(1);
+    }
+}
+
+.nav-button.reverse-hover{
+    &:after{
+        transform-origin: right;
+    }
+}
+
+.grid-item:hover, .grid-item:active{
+
+    picture{
+    
+        &:after{
+            color: $black;
+        }
+
+        &:before{
+            background-image: none;
+            background-color: hsla(0,100%,100%,0.8);
+        }
+    }
+}
+
+.classic-button:hover, .classic-button:active{
+
+    border-color: $black;
+    background-color: $black;
+    color : $white;
+}
+
+.classic-button:active{
+    transition: none;
+}

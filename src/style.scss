@@ -1,0 +1,70 @@
+@use 'abstracts/color' as *;
+@use 'abstracts/state';
+@use 'abstracts/media' as *;
+@use 'base/reset';
+@use 'base/typography';
+@use 'layout/header';
+@use 'layout/navigation';
+@use 'layout/section';
+@use 'layout/article';
+@use 'layout/footer';
+@use 'components/button';
+@use 'components/grid-item';
+
+.hide{
+    visibility: hidden;
+    position: fixed;
+    background-color: $black;
+    z-index: 1;
+    pointer-events: none;
+    transform: scale(0) ;
+    transform-origin: center;
+    transition: transform cubic-bezier(.19,1,.22,1) .5s;
+}
+
+.break{
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.hamburger{
+    display: none;
+    fill : $white;
+    
+    svg{
+        width: 1.6rem;
+        overflow: visible;
+    }
+
+    path{
+        transition: transform .16s;
+        transform-origin: 61%;
+    }
+}
+
+section{
+    padding : 0 10rem;
+}
+
+.slogan-container{
+    height: calc(100% - 15rem);
+    display: flex;
+    align-items: center;
+}
+
+.slogan{
+    border: 0.03em solid $white;
+    display: inline-block;
+    color: $white;
+    font-size: 4rem;
+    padding : 1.5rem;
+    width: 100%;
+    max-width: 37rem;
+    
+}
+
+.classic-button{
+    margin-left: auto;
+}
+
+@include mediaQuery;
